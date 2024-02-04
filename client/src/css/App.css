@@ -1,0 +1,13 @@
+:root {
+    --greywhite: #f7f4f2;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--greywhite);
+}
