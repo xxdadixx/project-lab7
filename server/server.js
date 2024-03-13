@@ -1,12 +1,12 @@
 const express = require('express');
-const app = express();
 const morgan = require('morgan')
 const cors = require('cors')
 const bodyParse = require('body-parser')
 const { readdirSync } = require('fs');
 const { join } = require('path');
-const PORT = process.env.PORT || 5000;
 const run = require('./Config/db')
+const app = express();
+const PORT = process.env.PORT || 5000;
 
 async function startServer() {
   try {

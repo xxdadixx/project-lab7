@@ -1,27 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './App'
-import CRUDClass from './CRUDClass'
-import CRUDClassEdit from './CRUDClassEdit'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
+import CRUDClass from "./CRUDClass";
+import CRUDClassEdit from "./CRUDClassEdit";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
   },
   {
     path: "/crudclass",
-    element: <CRUDClass />
+    element: <CRUDClass />,
   },
   {
     path: "/crudclassedit/:id",
-    element: <CRUDClassEdit />
-  }
-])
+    element: <CRUDClassEdit />,
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router = {router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
-)
+);
