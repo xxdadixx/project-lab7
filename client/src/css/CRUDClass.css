@@ -1,7 +1,43 @@
-.content-1 {
-    height: 900px;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    min-height: 100%;
+    background-blend-mode: screen;
 }
 
-.content-2 {
-    height: 400px;
+#wrapper {
+    max-width: auto; /* Adjust the value as needed */
+    margin: 0 auto;
+}
+
+.table {
+    border-radius: 20px;
+    /* Adjust the value as needed */
+    overflow: hidden;
+    /* Ensure rounded corners are visible */
+}
+
+th {
+    user-select: none;
+    /* Prevent text selection */
+}
+
+.section-with-overlay-crud {
+    display: flex;
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    position: relative;
+}
+
+.section-with-overlay-crud h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
 }

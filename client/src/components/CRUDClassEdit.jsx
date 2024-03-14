@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { readId } from "./function/CRUDClassFunc";
 import { Modal } from "bootstrap";
 import { Link } from "react-router-dom";
+import { readId } from "../function/CRUDClassFunc";
 
 function CRUDClassEdit() {
   const params = useParams();
@@ -41,7 +41,7 @@ function CRUDClassEdit() {
 
   useEffect(() => {
     loadData(params.id);
-  }, []);
+  }, [params.id]);
 
   const loadData = async (id) => {
     try {
